@@ -68,7 +68,7 @@ ul {
     text-align: end;
 }
 
-.div__projetos {
+.section__projetos {
     max-width: 1024px;
     width: 90%;
     display: flex;
@@ -81,7 +81,7 @@ ul {
     box-sizing: border-box;
 }
 
-.div__projetos a {
+.section__projetos a {
     font-family: "Roboto Mono", sans-serif;
     line-height: 1rem;
     text-align: end;
@@ -89,9 +89,10 @@ ul {
     color: inherit;
     box-sizing: border-box;
     display: inline-block;
+    align-self: flex-end;
   }
   
-  .div__projetos p {
+  .section__projetos p {
     margin: 0.5em;
   }
   
@@ -103,6 +104,18 @@ ul {
     align-items: flex-end;
     
   }
+
+  .div__projeto {
+    display: flex;
+    flex-direction: column;
+  }
+
+#visitar {
+    font-size: 1rem;
+    background-color: #E7E0DA;
+    color: #1A120F;
+    padding: .5rem;
+}  
 
 /* Área da transição do menu de projetos */
 
@@ -133,3 +146,38 @@ ul {
     transform: scaleX(1);
     transform-origin: left;
 }
+
+/* Área de texto explicativo animado */
+
+.oculto {
+    display: none;
+}
+
+.aparecer {
+    font-family: "Roboto Mono", sans-serif;
+    line-height: 1rem;
+    text-align: end;
+    text-decoration: none;
+    color: #E7E0DA;
+    background-color: #1A120F;
+    display: inline-block;
+    width: 100%;
+    margin-right: 2rem;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: .3rem;
+    line-height: 1.3rem;
+    animation: 
+        typing 1s steps(50),
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {border-color: transparent}
+}
+
+@keyframes typing {
+    from { width: 0}
+}
+
