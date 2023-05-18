@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #E7E0DA;    
 }
@@ -5,6 +9,35 @@ body {
 body::selection {
     background-color: #1A120F;
     color: #E7E0DA;    
+}
+
+header{
+    margin-top: 0;
+    margin-bottom: -3rem;
+}
+.cabecalho__nav {
+    max-width: 1024px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+ul {
+    list-style-type: none
+}
+
+.cabecalho__link {
+    display: inline-block;
+    padding: 0 .5rem;     
+}
+
+.cabecalho__link a {
+    font-family: "Roboto Mono", sans-serif;
+    text-decoration: none;
+    color: inherit;  
+    font-size: 1.3rem;
 }
 
 .div__apresentação {
