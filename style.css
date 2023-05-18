@@ -52,14 +52,51 @@ body::selection {
     font-family: "Roboto Mono", sans-serif;
     line-height: 1rem;
     text-align: end;
-    text-decoration: none;  
-    color: inherit; 
-}
-
-.div__projetos p {
-    margin: .5em
-}
-
-.link__projetos {
+    text-decoration: none;
+    color: inherit;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+  
+  .div__projetos p {
+    margin: 0.5em;
+  }
+  
+  .link__projetos {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+  }
+
+/* Área da transição do menu de projetos */
+
+#transicao {
+    color: #1A120F;
+    position: relative;
+    text-decoration: none;
+}
+
+#transicao:hover {
+    color: #E7E0DA;
+    position: relative;
+    text-decoration: none;
+}
+#transicao::before {
+    background: #1A120F;
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+    color: #E7E0DA;
+  }
+
+#transicao:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
 }
