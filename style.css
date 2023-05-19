@@ -57,7 +57,7 @@ ul {
 .titulo {
     font-family: "Roboto Mono", sans-serif;
     font-weight: 400;
-    margin-bottom: 7rem;
+    margin-bottom: 4rem;
     width: 100%;
     margin-top: 0;
 }
@@ -108,6 +108,7 @@ ul {
   .div__projeto {
     display: flex;
     flex-direction: column;
+    transition: 3s;
   }
 
 #visitar {
@@ -116,6 +117,161 @@ ul {
     color: #1A120F;
     padding: .5rem;
 }  
+
+#texto__digitado {
+    font-family: "Roboto Mono", sans-serif;
+    line-height: 1rem;
+    text-align: end;
+    text-decoration: none;
+    color: #E7E0DA;
+    background-color: #1A120F;
+}
+
+/* SEÇÃO CONHECIMENTO */
+.section__conhecimentos {
+    max-width: 1024px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto;
+    border: 1px solid #1A120F;
+    border-radius: 4px;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.section__conhecimentos IMG{
+    max-width: 150px;
+   
+}
+
+.section__conhecimentos p{
+    font-size: 1.5rem;
+   
+}
+
+.item__conhecimento {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    align-items: center;
+}
+
+.itens {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.itens p{
+    font-family: "Roboto Mono", sans-serif;
+    line-height: 1rem;
+    text-decoration: none;
+    color: inherit;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+
+}
+/* SEÇÃO REDES */
+.section__redes {
+    max-width: 1024px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 3rem auto;
+    border: 1px solid #1A120F;
+    border-radius: 4px;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+/* SEÇÃO CONTATO */
+.section__contato {
+    max-width: 1024px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 3rem auto;
+    border: 1px solid #1A120F;
+    border-radius: 4px;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.inputs__contato__pai {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1.5rem;
+}
+.inputs__contato {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.inputs__contato2 {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: flex-end;
+}
+
+.inputs__contato2 label {
+    font-family: "Roboto Mono", sans-serif;
+    line-height: 1rem;
+    margin-bottom: .5rem;
+    align-self: flex-start;
+    margin-left: 2.5rem;
+}
+
+.inputs__contato label {
+    font-family: "Roboto Mono", sans-serif;
+    line-height: 1rem;
+    margin-bottom: .5rem;
+}
+
+.inputs__contato input {
+    border:  1px solid #1A120F;
+    border-radius: 4px;
+    width: 90%;
+    padding: .2rem;
+    box-sizing: border-box;
+
+}
+
+.inputs__contato2 input {
+    border:  1px solid #1A120F;
+    border-radius: 4px;
+    width: 90%;
+    padding: .2rem;
+    box-sizing: border-box;
+
+} 
+
+.mensagem__contato {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.mensagem__contato label {
+    font-family: "Roboto Mono", sans-serif;
+    line-height: 1rem;
+    margin-bottom: .5rem;
+}
+
+.mensagem__contato textarea {
+    max-width: 100%;
+    min-height: 150px;
+    border:  1px solid #1A120F;
+    border-radius: 4px;
+    padding: .2rem;
+    box-sizing: border-box;
+}
 
 /* Área da transição do menu de projetos */
 
@@ -160,16 +316,15 @@ ul {
     text-decoration: none;
     color: #E7E0DA;
     background-color: #1A120F;
-    display: inline-block;
+    display: grid;
     width: 100%;
-    margin-right: 2rem;
     box-sizing: border-box;
-    white-space: nowrap;
-    overflow: hidden;
     padding: .3rem;
     line-height: 1.3rem;
-    animation: 
-        typing 1s steps(50),
+    
+    overflow: hidden;
+        animation: 
+        typing .8s steps(50),
         cursor .4s step-end infinite alternate;
 }
 
