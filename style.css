@@ -163,7 +163,7 @@ ul {
     justify-content: space-around;
 }
 
-.itens p{
+.itens p {
     font-family: "Roboto Mono", sans-serif;
     line-height: 1rem;
     text-decoration: none;
@@ -184,6 +184,35 @@ ul {
     border-radius: 4px;
     padding: 2rem;
     box-sizing: border-box;
+}
+
+.redes {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+
+.item__redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+
+.item__redes p {
+    font-family: "Roboto Mono", sans-serif;
+    line-height: 1rem;
+    text-decoration: none;
+    color: inherit;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.item__redes img {
+    width: 100px;
 }
 
 /* SEÇÃO CONTATO */
