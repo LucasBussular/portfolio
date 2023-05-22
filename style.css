@@ -154,12 +154,19 @@ ul {
     display: flex;
     flex-direction: column;
     max-width: 30%;
+    min-width: 30%;
     align-items: center;
+    padding-bottom: 2rem;
+}
+
+.item__conhecimento img {
+    max-height: 150px;
 }
 
 .itens {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -201,7 +208,10 @@ ul {
 }
 
 
-.item__redes p {
+.item__redes  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: "Roboto Mono", sans-serif;
     line-height: 1rem;
     text-decoration: none;
@@ -209,6 +219,10 @@ ul {
     box-sizing: border-box;
     margin-bottom: 2rem;
     font-size: 1.5rem;
+}
+
+.item__redes  a p{
+    padding: .6rem 0;
 }
 
 .item__redes img {
@@ -253,7 +267,7 @@ ul {
     line-height: 1rem;
     margin-bottom: .5rem;
     align-self: flex-start;
-    margin-left: 2.5rem;
+    margin-left: 3rem;
 }
 
 .inputs__contato label {
@@ -266,7 +280,7 @@ ul {
     border:  1px solid #1A120F;
     border-radius: 4px;
     width: 90%;
-    padding: .2rem;
+    padding: .3rem;
     box-sizing: border-box;
 
 }
@@ -275,7 +289,7 @@ ul {
     border:  1px solid #1A120F;
     border-radius: 4px;
     width: 90%;
-    padding: .2rem;
+    padding: .3rem;
     box-sizing: border-box;
 
 } 
