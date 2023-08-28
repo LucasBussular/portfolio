@@ -316,8 +316,16 @@ ul {
     box-sizing: border-box;
 }
 
-.enviar {
+#enviar {
+    font-family: "Roboto Mono", sans-serif;
+    margin-top: 1rem;
     align-self: flex-end;
+    border: none;
+    border-radius: 0;
+    color: #E7E0DA;
+    background-color: #1A120F;
+    padding: .5rem;
+
 }
 
 /* Área da transição do menu de projetos */
