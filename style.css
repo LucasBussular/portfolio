@@ -316,6 +316,10 @@ ul {
     box-sizing: border-box;
 }
 
+.enviar {
+    align-self: flex-end;
+}
+
 /* Área da transição do menu de projetos */
 
 #transicao {
